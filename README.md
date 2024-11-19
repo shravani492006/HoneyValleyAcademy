@@ -2,17 +2,6 @@
 
 Welcome to the HoneyValley Academy website repository! This website is designed to provide an online platform for students to explore and enroll in various creative courses, including arts, dance, music, acting, arts & crafts, and other hobbies. It includes features like user registration, login, course enrollment, payment options, workshop details, and blog posts.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation Guide](#installation-guide)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
