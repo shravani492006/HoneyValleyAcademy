@@ -1,0 +1,442 @@
+
+    
+
+
+<body>
+    <header style="background-color: transparent;">
+        <h1 style="text-align: center; color: #0a0a0a;">My Blog</h1>
+
+    </header>
+
+    <main style="width: 3000px;background-image:url('bgintrument.jpg');
+    background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover ;"
+    >
+      <!DOCTYPE html> 
+<html lang="en"> 
+
+<style>
+    /* style.css*/
+h1 { 
+	color:white; 
+} 
+
+h3 { 
+	color: blue; 
+	font: 25px; 
+	font-weight: 700; 
+} 
+
+.mybox1 { 
+	display: none; 
+} 
+
+button { 
+	padding: 10px; 
+	font-size: 20px; 
+	font-weight: 700; 
+	color: rgb(5, 14, 5); 
+	border: none; 
+	border-radius: 30px; 
+	background-color: rgb(182, 215, 182); 
+	margin-top: 20px; 
+} 
+
+div, 
+span { 
+	font-size: 20px; 
+}
+
+</style>
+<script>
+    // script.js 
+function changeReadMore() { 
+	const mycontent = 
+		document.getElementById('mybox1id'); 
+	const mybutton = 
+		document.getElementById('mybuttonid'); 
+	const span1 = document.getElementById("span1") 
+
+	if (mycontent.style.display === 'none'
+		|| mycontent.style.display === '') { 
+		mycontent.style.display = 'inline'; 
+		span1.style.display = "none"; 
+		mybutton.textContent = 'Read Less'; 
+	} else { 
+		mycontent.style.display = 'none'; 
+		mybutton.textContent = 'Read More'; 
+		span1.style.display = "inline"; 
+	} 
+} 
+
+</script>
+<article>
+    <div class="post">
+      <h2 style="text-align: center;">Discover New Passions in Hobby Classes! Cooking, Baking, Acting & More</h2>
+      <img src="bloghobby.jpg" style="        display: block;
+      margin: 0 auto;
+" width="600">
+      <p style="padding: 15px;">Looking for the perfect way to spark your child’s creativity and explore exciting hobbies? 🍳🎭 Honey Valley Academy offers a wide range of hobby classes for kids (and even grown-ups!) to dive into fun and creative activities. Whether it’s cooking, baking, learning a new language, or stepping into the spotlight in our acting classes, there’s something for everyone. Let’s turn passion into play and skills into fun with these exciting hobby courses !               <span id="dots6">...</span><span class="mybox1" id="more6"><br>
+          <br>
+1. Cooking & Baking (All Ages): Stir Up Some Fun in the Kitchen!<br>
+
+Is your child a budding chef or pastry artist? Our Cooking & Baking classes are open to kids of all ages (and even adults!) and offer a hands-on experience in the kitchen. From whipping up delicious treats to creating mouthwatering meals, this class will have your little chefs experimenting with flavors and loving every moment.<br>
+
+Why Your Kid Will Love It:<br>
+
+They’ll learn how to make fun, easy recipes from scratch – from cupcakes to simple pasta!
+
+Cooking is a fantastic way to boost creativity and teach practical life skills.
+
+It’s a yummy adventure where they can taste their own success!<br><br>
+
+
+2. Kids' Special Flameless Cooking: Safe & Fun for Little Chefs!<br>
+
+For younger kids, our Kids’ Special Flameless Cooking class is perfect! We focus on teaching kids how to create delicious treats without using a stove or oven. It’s all about fun, safe, and mess-free cooking where little hands can whip up easy recipes like sandwiches, smoothies, and salads.<br>
+
+Why It’s the Perfect Class for Young Chefs:<br>
+
+Safe, no-heat recipes make cooking easy and fun for kids.
+
+They’ll get to create their own snacks and meals with confidence.
+
+It’s a playful introduction to cooking, sparking a love for food without the need for heat.<br><br>
+
+
+3. Language Classes: Learn, Speak & Explore New Cultures<br>
+
+Does your child love learning new languages? At Honey Valley, we make learning a new language fun and interactive! Whether it’s brushing up on English skills, exploring a new language, or learning how to communicate in different cultures, our Language Classes are a great way to develop communication skills while having fun.<br>
+
+Why Your Child Will Be Excited:<br>
+
+They’ll explore different languages through games, songs, and fun activities.
+
+Learning a new language enhances memory, cognitive skills, and cultural understanding.
+
+Perfect for curious minds ready to connect with the world through language!<br><br>
+
+
+4. Acting Classes: Lights, Camera, Action!<br>
+
+Calling all young actors! 🎬 Our Acting Classes are perfect for kids who love being in the spotlight. From learning how to express emotions to performing in front of an audience, this class is designed to help children develop confidence, public speaking skills, and creativity through acting.<br>
+
+Why Your Child Will Love the Stage:<br>
+
+They’ll learn acting techniques, drama games, and how to perform with confidence.
+
+It’s a great way to boost self-esteem, teamwork, and communication skills.
+
+Acting is all about fun – they’ll enjoy playing different characters and expressing themselves!<br><br>
+
+
+Why Honey Valley Hobby Classes Rock!<br>
+
+At Honey Valley, we believe every child should have the opportunity to explore new hobbies and passions. Our hobby classes are designed to be fun, creative, and educational, helping kids discover new skills while having a blast along the way.<br>
+
+For All Age Groups: We offer classes that cater to different age ranges and skill levels.
+
+Creative & Fun: Each class is designed to keep kids engaged and excited about learning.
+
+Builds Confidence: Whether it’s cooking, acting, or learning a language, every class encourages creativity, self-expression, and confidence.<br>
+
+<br>
+Ready to Explore?<br>
+
+Let your child discover the joy of cooking, acting, and more at Honey Valley Academy! Whether they’re making delicious treats or performing on stage, we have the perfect hobby class to inspire their passion and keep the fun going.<br>
+
+Sign up today and watch your child’s creativity come to life! 🎉🍪🎬
+
+  
+        </span>
+          </p>
+          <button onclick="myFunc()" id="myBtn6">Read more</button>
+
+          <script>
+          function myFunc() {
+            const mycontent = 
+      document.getElementById('more6'); 
+    const mybutton = 
+      document.getElementById('mybtn6'); 
+    const span1 = document.getElementById("dots6") 
+
+            var dots = document.getElementById("dots6");
+            var moreText = document.getElementById("more6");
+            var btnText = document.getElementById("myBtn6");
+          
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more"; 
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less"; 
+              moreText.style.display = "inline";
+            }
+          }
+          </script>
+                 
+            
+            
+     </div>  
+
+  </article>
+        </article>
+        <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #7edaef;
+           color: #0a0a0a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        article {
+            margin-bottom: 20px;
+        }
+        
+        article h2 {
+            color: #333;
+            margin-bottom: 10px; 
+        } 
+        
+        article .meta {
+          color: #777;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+        }
+        
+        article p {
+          margin-bottom: 10px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        #invisible-text{
+          display:none;
+        }
+        </style>
+    </main>
+          
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Footer Design</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+    
+      <footer class="footer">
+         <div class="container1">
+        
+           <div class="row">
+             <div class="footer-col">
+               <h4>HoneyValley</h4>
+               <ul>
+                 <li><a href ="Homepage.html">Home</a></li>
+                 <li><a href="ContactUsDb.html">Contact US</a></li>
+                 <li><a href="About Us.html">About US</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Quick Link</h4>
+               <ul>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
+                 <li><a href="http://localhost/final%20project/login/Page/">Student</a></li>
+                 <li><a href="Blog.html">Blog</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Other</h4>
+               <ul>
+                <li><a href="Achivements.html">Achievements</a></li>
+             
+                </ul>
+             </div>
+             <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                 <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
+                 <a href="https://www.instagram.com/info.honeyvalley?igsh=MXBsbmh1d2xxb2Nnbw=="><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.google.com/maps/place/Honey+Valley+Activity+Academy/@19.0259413,72.8411297,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7cf77bdb62d47:0xc6a9c4d0af2a6585!8m2!3d19.0259362!4d72.8437046!16s%2Fg%2F11lp2ws720?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i></a>
+    
+               </div>
+             </div>
+           </div>
+         </div>
+         <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    }
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    .container2{
+    max-width: 1170px;
+    margin:auto;
+    }
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    ul{
+    list-style: none;
+    }
+    .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    }
+    .footer-col{
+    width: 25%;
+    padding: 0 15px;
+    }
+    .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    }
+    .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+    }
+    .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+    }
+    
+    
+    @media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+    .footer-col{
+    width: 100%;
+    }
+    }
+    
+    
+    
+    
+    </style>
+      </footer>
+    
+    </body>
+    </html>
+</html>
+
+    </style>
+<style>        
+
+        
+        main {
+            padding: 10px;
+            max-width: 1200px;
+            margin: 10px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        </style>
+    </main>
+

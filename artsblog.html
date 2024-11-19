@@ -1,0 +1,436 @@
+
+    
+
+
+<body>
+    <header style="background-color: transparent;">
+        <h1 style="text-align: center; color: #0a0a0a;">My Blog</h1>
+
+    </header>
+
+    <main style="width: 3000px;background-image:url('bgintrument.jpg');
+    background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover ;"
+    >
+      <!DOCTYPE html> 
+<html lang="en"> 
+
+<style>
+    /* style.css*/
+h1 { 
+	color:white; 
+} 
+
+h3 { 
+	color: blue; 
+	font: 25px; 
+	font-weight: 700; 
+} 
+
+.mybox1 { 
+	display: none; 
+} 
+
+button { 
+	padding: 10px; 
+	font-size: 20px; 
+	font-weight: 700; 
+	color: rgb(5, 14, 5); 
+	border: none; 
+	border-radius: 30px; 
+	background-color: rgb(182, 215, 182); 
+	margin-top: 20px; 
+} 
+
+div, 
+span { 
+	font-size: 20px; 
+}
+
+</style>
+<script>
+    // script.js 
+function changeReadMore() { 
+	const mycontent = 
+		document.getElementById('mybox1id'); 
+	const mybutton = 
+		document.getElementById('mybuttonid'); 
+	const span1 = document.getElementById("span1") 
+
+	if (mycontent.style.display === 'none'
+		|| mycontent.style.display === '') { 
+		mycontent.style.display = 'inline'; 
+		span1.style.display = "none"; 
+		mybutton.textContent = 'Read Less'; 
+	} else { 
+		mycontent.style.display = 'none'; 
+		mybutton.textContent = 'Read More'; 
+		span1.style.display = "inline"; 
+	} 
+} 
+
+</script>
+<article>
+    <h2 style="text-align: center;">Get Creative with Art & Craft at Honey Valley! Drawing & Painting Fun for Every Kid
+    </h2>
+    <img src="blogart&craft.jpg" width="600" style="        display: block;
+    margin: 0 auto;
+">
+    <p style="font-size: 20px; padding: 15px;"> 🎨 Do you have a little Picasso at home? Let your child’s creativity soar with Honey Valley’s Art & Craft classes, designed to bring out the artist in every child! Whether your kid is just starting out with basic drawing or ready to master advanced painting techniques, we have the perfect class for every skill level. From basic drawing for younger kids to exam prep and advanced painting, we’ve got it all covered for kids in grades 1 to 7!
+        <span id="dots">...</span><span class="mybox1" id="more">         
+        <br>
+
+        1. Basic Drawing Skills (Grades 1 to 4): Where Creativity Begins!<br>
+        
+        For younger kids in grades 1 to 4, art is all about having fun, exploring shapes, and learning how to draw. Our Basic Drawing Skills class helps kids build confidence with easy, step-by-step lessons. Whether it’s doodling animals, drawing nature scenes, or sketching their favorite cartoons, this class is designed to make drawing exciting and approachable!<br>
+        
+        Why Your Little Artist Will Love It:<br>
+        
+        They’ll learn the fundamentals of shapes, lines, and colors in a fun, playful way.
+        
+        It’s all about boosting their creativity and letting their imagination run wild.
+        
+        They’ll love bringing their favorite things to life on paper!<br><br>
+        
+        
+        2. Basic Drawing Skills (Grades 5 to 7): Time to Step Up!<br>
+        
+        For kids in grades 5 to 7, it's time to take their drawing skills to the next level! In this class, we focus on more detailed techniques, like shading, perspective, and proportion, while still keeping the creative spirit alive. It’s perfect for young artists who want to refine their skills and start creating more complex and detailed drawings.<br>
+        
+        Why Your Kid Will Be Excited:<br>
+        
+        They’ll learn cool techniques like shading, textures, and proportions to level up their art.
+        
+        It’s an awesome way to build their confidence in drawing realistic objects and characters.
+        
+        The class encourages creativity while teaching key skills that set a foundation for future art projects.<br><br>
+        
+        
+        3. Preparation for Elementary & Intermediate Art Exams: Get Exam-Ready!<br>
+        
+        Does your child dream of acing their elementary or intermediate art exams? Our Exam Prep Classes are designed to help young artists sharpen their skills and prepare for these important milestones. We cover everything from the basics to more advanced techniques, ensuring that your child feels confident and prepared for the exams.<br>
+        Why Your Kid Will Thrive:<br>
+        
+        They’ll get expert guidance on how to excel in exam techniques like sketching, painting, and composition.
+        
+        We provide plenty of practice with past papers and mock exams to boost confidence.
+        
+        It’s a great way for kids to showcase their talents and feel proud of their progress.<br><br>
+        
+        
+        4. Advanced Painting Class: Master the Art of Painting!<br>
+        
+        Ready for your child to dive deep into the world of painting? Our Advanced Painting Class is perfect for young artists looking to explore new techniques, work with different mediums, and create masterpieces. From watercolor and acrylics to oil painting, this class helps kids express themselves through color, texture, and creativity.<br>
+        
+        Why Your Budding Artist Will Shine:<br>
+        
+        They’ll experiment with various painting techniques and mediums, unlocking their full artistic potential.
+        
+        The class encourages personal expression, letting each child’s unique style come to life.
+        
+        It’s the perfect opportunity for kids to develop their own artistic voice and create beautiful, gallery-worthy pieces.<br><br>
+        
+        
+        Why Choose Honey Valley for Art & Craft?<br>
+        
+        At Honey Valley, we believe every child is an artist! Our art classes are designed to nurture creativity, build skills, and most importantly – let kids have fun with art. Whether your child is just starting out or ready for advanced techniques, we offer something for every aspiring young artist.<br>
+        
+        <br>For Grades 1 to 7: Classes are tailored to suit each age group and skill level.
+        
+        Creativity Meets Learning: Kids develop artistic skills while expressing themselves and having fun.
+        
+        Supportive Environment: Our classes focus on boosting confidence and encouraging creativity in every child.<br>
+        
+        
+        Let the Creativity Begin!<br>
+        
+        Ready to see your child explore the world of art and craft? Whether they’re learning the basics of drawing or diving into the world of advanced painting, Honey Valley’s art classes are the perfect place to nurture their artistic journey!<br>
+        
+        Sign up today and let your child's imagination take flight! 🎨✨<br>
+      
+    </p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() { 
+  const mycontent = 
+    document.getElementById('more'); 
+  const mybutton = 
+    document.getElementById('mybtn'); 
+  const span1 = document.getElementById("dots") 
+
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+dots.style.display = "inline";
+btnText.innerHTML = "Read more"; 
+moreText.style.display = "none";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "Read less"; 
+moreText.style.display = "inline";
+}
+}
+</script>
+
+        </article>
+        <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #7edaef;
+           color: #0a0a0a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        article {
+            margin-bottom: 20px;
+        }
+        
+        article h2 {
+            color: #333;
+            margin-bottom: 10px; 
+        } 
+        
+        article .meta {
+          color: #777;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+        }
+        
+        article p {
+          margin-bottom: 10px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        #invisible-text{
+          display:none;
+        }
+        </style>
+    </main>
+          
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Footer Design</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+    
+      <footer class="footer">
+         <div class="container1">
+        
+           <div class="row">
+             <div class="footer-col">
+               <h4>HoneyValley</h4>
+               <ul>
+                 <li><a href ="Homepage.html">Home</a></li>
+                 <li><a href="ContactUsDb.html">Contact US</a></li>
+                 <li><a href="About Us.html">About US</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Quick Link</h4>
+               <ul>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
+                 <li><a href="http://localhost/final%20project/login/Page/">Student</a></li>
+                 <li><a href="Blog.html">Blog</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Other</h4>
+               <ul>
+                <li><a href="Achivements.html">Achievements</a></li>
+             
+                </ul>
+             </div>
+             <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                 <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
+                 <a href="https://www.instagram.com/info.honeyvalley?igsh=MXBsbmh1d2xxb2Nnbw=="><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.google.com/maps/place/Honey+Valley+Activity+Academy/@19.0259413,72.8411297,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7cf77bdb62d47:0xc6a9c4d0af2a6585!8m2!3d19.0259362!4d72.8437046!16s%2Fg%2F11lp2ws720?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i></a>
+    
+               </div>
+             </div>
+           </div>
+         </div>
+         <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    }
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    .container2{
+    max-width: 1170px;
+    margin:auto;
+    }
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    ul{
+    list-style: none;
+    }
+    .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    }
+    .footer-col{
+    width: 25%;
+    padding: 0 15px;
+    }
+    .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    }
+    .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+    }
+    .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+    }
+    
+    
+    @media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+    .footer-col{
+    width: 100%;
+    }
+    }
+    
+    
+    
+    
+    </style>
+      </footer>
+    
+    </body>
+    </html>
+</html>
+
+    </style>
+<style>        
+
+        
+        main {
+            padding: 10px;
+            max-width: 1200px;
+            margin: 10px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        </style>
+    </main>
+
