@@ -60,6 +60,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries or further information, you can reach out to us:
 
 - Email: namitasp00@gmail.com
+-        kshravani496@gmail.com
 
 ---
 
