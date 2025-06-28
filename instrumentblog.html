@@ -1,0 +1,413 @@
+
+    
+
+
+<body>
+    <header style="background-color: transparent;">
+        <h1 style="text-align: center; color: #0a0a0a;">My Blog</h1>
+
+    </header>
+
+    <main style="width: 3000px;background-image:url('bgintrument.jpg');
+    background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover ;"
+    >
+      <!DOCTYPE html> 
+<html lang="en"> 
+
+<style>
+    /* style.css*/
+h1 { 
+	color:white; 
+} 
+
+h3 { 
+	color: blue; 
+	font: 25px; 
+	font-weight: 700; 
+} 
+
+.mybox1 { 
+	display: none; 
+} 
+
+button { 
+	padding: 10px; 
+	font-size: 20px; 
+	font-weight: 700; 
+	color: rgb(5, 14, 5); 
+	border: none; 
+	border-radius: 30px; 
+	background-color: rgb(182, 215, 182); 
+	margin-top: 20px; 
+} 
+
+div, 
+span { 
+	font-size: 20px; 
+}
+
+</style>
+<script>
+    // script.js 
+function changeReadMore() { 
+	const mycontent = 
+		document.getElementById('mybox1id'); 
+	const mybutton = 
+		document.getElementById('mybuttonid'); 
+	const span1 = document.getElementById("span1") 
+
+	if (mycontent.style.display === 'none'
+		|| mycontent.style.display === '') { 
+		mycontent.style.display = 'inline'; 
+		span1.style.display = "none"; 
+		mybutton.textContent = 'Read Less'; 
+	} else { 
+		mycontent.style.display = 'none'; 
+		mybutton.textContent = 'Read More'; 
+		span1.style.display = "inline"; 
+	} 
+} 
+
+</script>
+<article>
+  <div class="post">
+    <h2 style="text-align: center;">Rock, Play & Jam! Instrumental Music Classes  – Guitar & Keyboard for Kids</h2>
+    <img src="blog instrument.jpg" style="        display: block;
+    margin: 0 auto;
+" width="600">
+    <p style="padding: 15px;">Parents, are you ready to let your kids discover their inner rockstar? 🎸🎹 At Honey Valley Academy, we’re all about letting kids explore the joy of music through guitar and keyboard lessons, specially designed for kids aged 7 and up. Whether your child dreams of strumming epic tunes or playing mesmerizing melodies on the keyboard, we’ve got the perfect class to fuel their musical passion. Let’s get them jamming!<span id="dots9">...</span><span class="mybox1" id="more9"><br>
+        <br><br>
+        1. Guitar Classes: Strum Like a Pro!<br>
+        
+        Ever noticed your child air-guitaring to their favorite songs? Time to turn those moves into real skills! Our guitar classes introduce kids to the basics of playing this versatile instrument, from mastering chords to playing simple songs. Before you know it, they’ll be strumming tunes and impressing everyone!<br>
+        
+        Why Your Kid Will Love It:<br>
+        
+        They’ll learn to play their favorite songs in no time, making practice fun and exciting.
+        
+        Guitar helps improve hand-eye coordination, focus, and creativity.
+        
+        It’s the coolest way to express themselves musically, whether they’re into rock, pop, or acoustic vibes.<br><br>
+        
+        
+        2. Keyboard Classes: Create Magic with Every Key<br>
+        
+        If your child has a love for music and melodies, keyboard classes are the perfect way to introduce them to the world of music. At Honey Valley, we make learning the keyboard fun and easy. From understanding notes and chords to playing fun tunes, kids will quickly find themselves immersed in the world of music, making magic with every key.<br>
+        
+        Why Your Kid Will Be Hooked:<br>
+        
+        They’ll quickly pick up songs they love and learn to create their own!
+        
+        Playing the keyboard builds musical theory knowledge while encouraging creativity.
+        
+        It’s an awesome way to develop focus and patience – all while having a blast.<br><br>
+        
+        
+        Why Choose Honey Valley for Instrumental Music?<br>
+        
+        At Honey Valley, we know that every child has a unique musical journey. That’s why our guitar and keyboard lessons are all about fun, creativity, and expression. Whether your kid wants to jam to their favorite songs or dive into musical theory, we create a supportive environment where they can grow, learn, and – most importantly – have fun!<br>
+        
+        Tailored for Kids 7+: Our classes are designed to engage kids with age-appropriate techniques and songs.
+        
+        Hands-On Learning: We focus on teaching through practical, fun lessons that keep kids motivated.
+        
+        Express Yourself: Whether it's rocking out on the guitar or composing a keyboard melody, your child will love discovering their musical identity.
+        <br>
+         Let’s Get Rocking!<br>
+        
+        Ready to let your child explore the amazing world of instrumental music? 🎶 Whether they want to shred on the guitar or create beautiful keyboard melodies, Honey Valley’s music classes are the perfect place to start their musical journey.
+        <br>
+        Sign up today and watch your little musician become a star!</span></p>
+        <button onclick="myFun()" id="myBtn9">Read more</button>
+
+        <script>
+        function myFun() {
+          const mycontent = 
+    document.getElementById('more9'); 
+  const mybutton = 
+    document.getElementById('mybtn9'); 
+  const span1 = document.getElementById("dots9") 
+
+          var dots = document.getElementById("dots9");
+          var moreText = document.getElementById("more9");
+          var btnText = document.getElementById("myBtn9");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+               
+          
+          
+        
+    </div>    
+</article>
+
+
+        </article>
+        <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #7edaef;
+           color: #0a0a0a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        article {
+            margin-bottom: 20px;
+        }
+        
+        article h2 {
+            color: #333;
+            margin-bottom: 10px; 
+        } 
+        
+        article .meta {
+          color: #777;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+        }
+        
+        article p {
+          margin-bottom: 10px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        #invisible-text{
+          display:none;
+        }
+        </style>
+    </main>
+          
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Footer Design</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+    
+      <footer class="footer">
+         <div class="container1">
+        
+           <div class="row">
+             <div class="footer-col">
+               <h4>HoneyValley</h4>
+               <ul>
+                 <li><a href ="Homepage.html">Home</a></li>
+                 <li><a href="ContactUsDb.html">Contact US</a></li>
+                 <li><a href="About Us.html">About US</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Quick Link</h4>
+               <ul>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
+                 <li><a href="http://localhost/final%20project/login/Page/">Student</a></li>
+                 <li><a href="Blog.html">Blog</a></li>
+    
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Other</h4>
+               <ul>
+                <li><a href="Achivements.html">Achievements</a></li>
+             
+                </ul>
+             </div>
+             <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                 <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
+                 <a href="https://www.instagram.com/info.honeyvalley?igsh=MXBsbmh1d2xxb2Nnbw=="><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.google.com/maps/place/Honey+Valley+Activity+Academy/@19.0259413,72.8411297,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7cf77bdb62d47:0xc6a9c4d0af2a6585!8m2!3d19.0259362!4d72.8437046!16s%2Fg%2F11lp2ws720?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i></a>
+    
+               </div>
+             </div>
+           </div>
+         </div>
+         <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    }
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    .container2{
+    max-width: 1170px;
+    margin:auto;
+    }
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    ul{
+    list-style: none;
+    }
+    .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    }
+    .footer-col{
+    width: 25%;
+    padding: 0 15px;
+    }
+    .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    }
+    .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+    }
+    .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+    }
+    
+    
+    @media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+    .footer-col{
+    width: 100%;
+    }
+    }
+    
+    
+    
+    
+    </style>
+      </footer>
+    
+    </body>
+    </html>
+</html>
+
+    </style>
+<style>        
+
+        
+        main {
+            padding: 10px;
+            max-width: 1200px;
+            margin: 10px auto;
+            background-color: transparent;
+            background-image: url('bgintrument.jpg');
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        </style>
+    </main>
+

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            line-height: 1.5;
+            font-family: sans-serif;
+        }
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1180px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img, video {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        .gallery {
+            width: 100%;
+            display: block;
+            min-height: 100vh;
+            background-color: white;
+            padding: 100px 0;
+        }
+        .gallery .gallery-filter {
+            padding: 0 15px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery .gallery-filter .filter-item {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 0 10px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            line-height: 1.2;
+            transition: all 0.3s ease;
+        }
+        .gallery .gallery-filter .filter-item.active {
+            color: #ff9800;
+            border-color: #ff9800;
+        }
+        .gallery .gallery-item {
+            width: calc(100% / 3);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .gallery .gallery-item-inner {
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* Aspect ratio 4:3 for images */
+            position: relative;
+        }
+        .gallery .gallery-item-inner img, 
+        .gallery .gallery-item-inner video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the content covers the area without stretching */
+        }
+        /* Responsive */
+        @media (max-width: 991px) {
+            .gallery .gallery-item {
+                width: 50%;
+            }
+        }
+        @media (max-width: 767px) {
+            .gallery .gallery-item {
+                width: 100%;
+            }    
+            .gallery .gallery-filter .filter-item {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+ <body>
+    <header>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar {
+            overflow: hidden;
+          background-color: lightblue;
+           width: 100%;
+    height: 60px;      /* Consistent height */
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: black;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+        </head>
+        <body style="background-color:black;">
+        
+        <div class="navbar" style="background-color: lightblue;padding: 2px; font-size:10px; " >
+          <div class="dropdown">
+            <button class="dropbtn">Menu 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="http://localhost/final%20project/login/Page/">Students</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a>
+              <a href="Achivements.html">Achievements</a>
+              <a href="Gallery.html">Gallery</a>
+              <a href="Blog.html">Blog</a>
+
+            </div>
+
+          </div> 
+          <a href="Homepage.html">Home</a>
+          <a href="About Us.html">About Us</a>
+          <a href="ContactUsDb.html">Contact Us</a>
+
+
+        </div>
+            
+        </body>
+        </html>
+        
+          
+  
+    </header>
+
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="gallery-filter">
+                <span class="filter-item active" data-filter="all">Gallery</span>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Image Gallery Items -->
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 1.jpg" alt="Gallery Image 1">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 2.jpg" alt="Gallery Image 2">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 3.jpg" alt="Gallery Image 3">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 4.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 5.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 6.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 7.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 8.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 9.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 10.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 11.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 12.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 13.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="Copy of 14.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" class="video-item" src="vid1.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid2.mp4" controls></video>
+                </div>
+            </div>
+			<div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid3.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid4.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid5.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid6.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid7.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid8.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid9.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid10.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid11.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid12.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid13.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid14.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid15.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid16.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid17.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid18.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid19.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid20.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid21.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid22.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid23.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid24.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid25.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid26.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid27.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid28.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video  class="video-item" src="vid29.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid30.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid31.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid32.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid33.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid34.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid35.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid36.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid37.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid38.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid39.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid40.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid41.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid42.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid43.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid44.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid45.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid46.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid47.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid48.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid49.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid50.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid51.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid52.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid53.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid54.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid55.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid56.mp4" controls></video>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <video class="video-item" src="vid57.mp4" controls></video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('.video-item');
+
+        videos.forEach(video => {
+            video.addEventListener('play', () => {
+                videos.forEach(v => {
+                    if (v !== video) {
+                        v.pause();
+                    }
+                });
+            });
+        });
+    });
+</script>
+          
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+     <div class="container1">
+       <div class="row">
+         <div class="footer-col">
+           <h4>HoneyValley</h4>
+           <ul>
+             <li><a href ="Homepage.html">Home</a></li>
+             <li><a href="ContactUsDb.html">Contact US</a></li>
+             <li><a href="About Us.html">About US</a></li>
+
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Quick Link</h4>
+           <ul>
+             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
+             <li><a href="http://localhost/final%20project/login/Page/">Student</a></li>
+             <li><a href="Blog.html">Blog</a></li>
+
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Other</h4>
+           <ul>
+            <li><a href="Achivements.html">Achievements</a></li>
+         
+            </ul>
+         </div>
+         <div class="footer-col">
+           <h4>follow us</h4>
+           <div class="social-links">
+             <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
+             <a href="https://www.instagram.com/info.honeyvalley?igsh=MXBsbmh1d2xxb2Nnbw=="><i class="fab fa-instagram"></i></a>
+             <a href="https://www.google.com/maps/place/Honey+Valley+Activity+Academy/@19.0259413,72.8411297,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7cf77bdb62d47:0xc6a9c4d0af2a6585!8m2!3d19.0259362!4d72.8437046!16s%2Fg%2F11lp2ws720?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i></a>
+
+           </div>
+         </div>
+       </div>
+     </div>
+     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.container1{
+max-width: 1170px;
+margin:auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: #24262b;
+padding: 70px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:0;
+bottom: -10px;
+background-color: #e91e63;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+.footer-col{
+width: 50%;
+margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+.footer-col{
+width: 100%;
+}
+}
+
+
+
+
+</style>
+  </footer>
+
+</body>
+</html>
+</html>
