@@ -268,7 +268,7 @@ Sign up today and let the fitness fun begin! 💪🎉<br>
         
            <div class="row">
              <div class="footer-col">
-               <h4>HoneyValley</h4>
+               <h4 style="margin-right:250px;">HoneyValley</h4>
                <ul>
                  <li><a href ="Homepage.html">Home</a></li>
                  <li><a href="ContactUsDb.html">Contact US</a></li>
@@ -277,23 +277,23 @@ Sign up today and let the fitness fun begin! 💪🎉<br>
                </ul>
              </div>
              <div class="footer-col">
-               <h4>Quick Link</h4>
+               <h4 style="margin-right:250px;">QuickLink</h4>
                <ul>
                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
-                 <li><a href="http://localhost/final%20project/login/Page/">Student</a></li>
+                 <li><a href="http://localhost/final%20project/logphp/phpfile/login1.php">Student</a></li>
                  <li><a href="Blog.html">Blog</a></li>
     
                </ul>
              </div>
              <div class="footer-col">
-               <h4>Other</h4>
+               <h4 style="margin-right:250px;">Other</h4>
                <ul>
                 <li><a href="Achivements.html">Achievements</a></li>
              
                 </ul>
              </div>
              <div class="footer-col">
-               <h4>follow us</h4>
+               <h4 style="margin-right:250px;">followUs</h4>
                <div class="social-links">
                  <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                  <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
@@ -329,6 +329,7 @@ Sign up today and let the fitness fun begin! 💪🎉<br>
     .footer{
     background-color: #24262b;
     padding: 70px 0;
+    min-width: 1200px;
     }
     .footer-col{
     width: 25%;
@@ -386,6 +387,16 @@ Sign up today and let the fitness fun begin! 💪🎉<br>
     background-color: #ffffff;
     }
     
+    @media(max-width: 1235px){
+      .footer-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+      }
+      .footer-col h4{
+        margin-right: 0px !important;
+      } 
+    }
     
     @media(max-width: 767px){
     .footer-col{

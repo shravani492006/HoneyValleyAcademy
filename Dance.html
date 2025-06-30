@@ -654,7 +654,7 @@ main .center-content {
              <div class="footer-col">
                <h4 style="margin-right:250px;">HoneyValley</h4>
                <ul>
-                 <li><a href ="Homepage.html">Home</a></li>
+                 <li><a href ="index.html">Home</a></li>
                  <li><a href="ContactUsDb.html">Contact US</a></li>
                  <li><a href="About Us.html">About US</a></li>
     
@@ -713,6 +713,7 @@ main .center-content {
     .footer{
     background-color: #24262b;
     padding: 70px 0;
+    min-width: 1200px;
     }
     .footer-col{
     width: 25%;
@@ -770,6 +771,16 @@ main .center-content {
     background-color: #ffffff;
     }
     
+    @media(max-width: 1235px){
+      .footer-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+      }
+      .footer-col h4{
+        margin-right: 0px !important;
+      } 
+    }
     
     @media(max-width: 767px){
     .footer-col{

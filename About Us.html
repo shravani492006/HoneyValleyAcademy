@@ -318,7 +318,7 @@ function closeNav() {
                 <a href="http://localhost/final%20project/logphp/phpfile/Workshop.php">Workshop</a>
 
   <a href="ContactUsDb.html">Contact Us</a>
-  <a href="Homepage.html">Home</a>
+  <a href="index.html">Home</a>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -866,12 +866,12 @@ display: block;
     </head>
     <body>
     
-      <footer class="footer">
+<footer class="footer">
          <div class="container1">
         
            <div class="row">
              <div class="footer-col">
-               <h4 style="margin-right: 200px;">HoneyValley</h4>
+               <h4 style="margin-right:250px;">HoneyValley</h4>
                <ul>
                  <li><a href ="Homepage.html">Home</a></li>
                  <li><a href="ContactUsDb.html">Contact US</a></li>
@@ -880,7 +880,7 @@ display: block;
                </ul>
              </div>
              <div class="footer-col">
-               <h4  style="margin-right: 200px;">QuickLink</h4>
+               <h4 style="margin-right:250px;">QuickLink</h4>
                <ul>
                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdchX4vLqLSLT-S3l4EZA-DrxZVbEXGlX_efUrUTN2TooeejQ/viewform">Admission</a></li>
                  <li><a href="http://localhost/final%20project/logphp/phpfile/login1.php">Student</a></li>
@@ -889,14 +889,14 @@ display: block;
                </ul>
              </div>
              <div class="footer-col">
-               <h4  style="margin-right: 250px;">Other</h4>
+               <h4 style="margin-right:250px;">Other</h4>
                <ul>
                 <li><a href="Achivements.html">Achievements</a></li>
              
                 </ul>
              </div>
              <div class="footer-col">
-               <h4  style="margin-right: 200px;">followUs</h4>
+               <h4 style="margin-right:250px;">followUs</h4>
                <div class="social-links">
                  <a href="https://www.facebook.com/profile.php?id=100065211922440&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                  <a href="https://youtube.com/@honeyvalleyactivityacademy?si=p-6gaUm6hdFAWiES"><i class="fab fa-youtube"></i></a>
@@ -932,6 +932,7 @@ display: block;
     .footer{
     background-color: #24262b;
     padding: 70px 0;
+    min-width: 1200px;
     }
     .footer-col{
     width: 25%;
@@ -989,6 +990,16 @@ display: block;
     background-color: #ffffff;
     }
     
+    @media(max-width: 1235px){
+      .footer-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+      }
+      .footer-col h4{
+        margin-right: 0px !important;
+      } 
+    }
     
     @media(max-width: 767px){
     .footer-col{
@@ -1007,6 +1018,7 @@ display: block;
     
     </style>
       </footer>
+    
     
     </body>
     </html>
